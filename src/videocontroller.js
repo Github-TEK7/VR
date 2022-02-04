@@ -1,0 +1,1 @@
+var _0x2400=["videoplayer","#videoclip","querySelector","#videoplayerentity","play","visible","setAttribute","click","addEventListener","el","registerComponent"];AFRAME[_0x2400[10]](_0x2400[0],{init:function(){let e=document[_0x2400[2]](_0x2400[1]),t=document[_0x2400[2]](_0x2400[3]);this[_0x2400[9]][_0x2400[8]](_0x2400[7],()=>{e[_0x2400[4]](),t[_0x2400[6]](_0x2400[5],!1)})}});

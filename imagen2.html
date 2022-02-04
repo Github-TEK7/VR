@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Mente Activa - VR</title>
+    <meta name="description" content="Video - A-Frame">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+      <a-assets>
+        <img id="my-image" src="recursos/cuento2.jpg" width="160" height="90">
+        <audio id="song" src="recursos/spacealarm.mp3"crossorigin="anonymous"></audio>
+      </a-assets>
+
+        <!--
+      SOURCE
+      Title:  Las tres Rejas
+      Author: paulo Coehlo
+      -->
+      <a-entity material="shader: flat; src: #my-image" geometry="primitive: plane; width: 160; height: 90;"
+            position="0 2 -100">
+        </a-entity>
+
+        <a-entity id="musicpanel" sound="src: #song; volume: 5">
+        </a-entity>
+
+        <a-camera id="camera" camera camera-logger wasd-controls="acceleration:2000">
+           
+            <!-- define camera logger component -->
+
+            <a-entity id="mensaje" text="align: center;
+            width: 20;
+            wrapCount: 100;
+            color: white;
+            value: Vuelve a enfocar la pantalla"  visible="false">
+
+            <a-entity id="figure" geometry="primitive: box" visible="false">
+
+              <script src="src/groupimg.js"></script>
+                  
+                  
+              </a-camera>
+       
+              <a-sky color="#000000"></a-sky>
+          </a-scene>
+</body>
+</html>
