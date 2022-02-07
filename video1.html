@@ -6,20 +6,23 @@
     <meta name="description" content="Video - A-Frame">
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="js/script1.js"></script>
+    <script src="src/hide-on-play.js"></script>
     <script src="src/videocontroller.js"></script>
 </head>
 <body>
 
   <script src="src/groupmp.js"></script>
-
+  <script src="src/local.js"></script>
+  <script src="src/video.js"></script>
   <a-scene >
         
     <a-assets>
-      <video id="videoclip" loop="true" src="recursos/video1.mp4" crossorigin="anonymous"></video>
-      <audio id="song" src="recursos/spacealarm.mp3"crossorigin="anonymous"></audio>
+      <video id='videoclip' loop='true' crossorigin='anonymous' src='recursos/monstruocolores.mp4'></video>
+      <audio id="song" src="recursos/spacealarm.mp3" crossorigin="anonymous"></audio>
+      <img id="panorama" src="img/fondo.png">
     </a-assets>
     
-    <a-camera id="camera" camera camera-logger wasd-controls="acceleration:2000">
+    <a-camera id="camera" camera camera-logger wasd-controls="acceleration:1000">
       <a-entity cursor="rayOrigin: mouse"></a-entity>
       <a-entity id="videoplayerentity" position="0 0 -3" text="align: center;
           width: 6;
@@ -39,10 +42,10 @@
 
     <a-entity laser-controls="hand:right"></a-entity>
 
-    <a-sky color="#000000"></a-sky>
+    <a-sky id="fondox" src="#panorama"></a-sky>
 
     
-    <a-video src="#videoclip" position="0 2 -10" width="18" height="10">
+    <a-video src="#videoclip" position="0 2 -11" width="18" height="10">
       
     </a-video>
 

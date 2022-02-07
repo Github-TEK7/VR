@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Mente Activa - VR</title>
+    <meta name="description" content="Video - A-Frame">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="js/script1.js"></script>
+    <script src="src/hide-on-play.js"></script>
+    <script src="src/videocontroller.js"></script>
+</head>
+<body>
+
+  <script src="src/groupmp.js"></script>
+  <script src="src/local.js"></script>
+  <script src="src/video.js"></script>
+  <a-scene >
+        
+    <a-assets>
+      <!-- Cuento  Cuando estoy enfadado    Manejar las emociones   Trace Moroney -->
+      <video id='videoclip' loop='true' crossorigin='anonymous' src='recursos/enfadado.mp4'></video>
+      <audio id="song" src="recursos/spacealarm.mp3" crossorigin="anonymous"></audio>
+      <img id="panorama" src="img/fondo.png">
+    </a-assets>
+    
+    <a-camera id="camera" camera camera-logger wasd-controls="acceleration:1000">
+      <a-entity cursor="rayOrigin: mouse"></a-entity>
+      <a-entity id="videoplayerentity" position="0 0 -3" text="align: center;
+          width: 6;
+          wrapCount: 30;
+          color: white;
+          background='color: red';
+          value: Click para iniciar el video" visible="true" videoplayer>
+        </a-entity>
+      <a-entity id="mensaje" text="align: center;
+          width: 20;
+          wrapCount: 100;
+          color: white;
+          value: Vuelve a enfocar la pantalla"  visible="false">
+
+      <a-entity id="figure" geometry="primitive: box" visible="false">
+    </a-camera>
+
+    <a-entity laser-controls="hand:right"></a-entity>
+
+    <a-sky id="fondox" src="#panorama"></a-sky>
+
+    
+    <a-video src="#videoclip" position="0 2 -10" width="18" height="10">
+      
+    </a-video>
+
+    <a-entity id="musicpanel" sound="src: #song; volume: 5">
+    </a-entity>
+
+  </a-scene>
+
+</body>
+</html>
