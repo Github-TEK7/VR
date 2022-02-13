@@ -56,13 +56,13 @@
                     </div>
                     <div class="col-12 col-md-5">
                         <button type="button" class="btn btn-outline-yellow rounded align-content-center my-1 my-md-0" data-toggle="modal" data-target="#exampleModal">
-                            Ver Grafica de sensibilidad
+                            Vista Previa de sensibilidad
                         </button>
                     </div>
                 </div>
 
                 <div class="row my-5 ">
-                  <div class="col-12">
+                  <div class="col-12 col-md-7">
                     <div class="input-group d-flex justify-content-around" onclick="seleccionetapa();">
                       <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                         <input type="radio" class="btn-check" name="btnradio" value="0" id="btnradio1" autocomplete="off"  checked>
@@ -76,9 +76,15 @@
   
                         <input type="radio" class="btn-check" name="btnradio" value="3" id="btnradio4" autocomplete="off" >
                         <label class="btn btn-outline-yellow" for="btnradio4">Etapa 4</label>
+
                       </div>
                     </div>
                   </div>
+                  <div class="col-12 col-md-5">
+                    <button type="button" class="btn btn-outline-yellow rounded align-content-center my-1 my-md-0" data-toggle="modal" data-target="#exampleModal1" onclick="seleccionetapamodal();">
+                        Vista Previa de etapas
+                    </button>
+                </div>
               </div>
               </div>
             
@@ -194,24 +200,56 @@
                     <div class="col">
                         <div class="card mb-5 ms-auto me-3">
                             <a class="card-imagen" href="javascript:video(11)">
-                                <img src="img/img1.jpg" class="card-img-top cover" alt="...">
+                                <img src="img/sombrero.png" class="card-img-top cover" alt="...">
                             </a>
                         <div class="card-body">
-                          <h5 class="card-title text-center">Cuento 1</h5>
+                          <h5 class="card-title text-center">El sombrero de las buenas ideas</h5>
                         </div>
                       </div>
                     </div>
                     <div class="col">
                         <div class="card me-auto mb-5 ms-3">
                             <a class="card-imagen" href="javascript:video(12)">
-                                <img src="img/img2.jpg" class="card-img-top cover" alt="...">
+                                <img src="img/5hermanos.png" class="card-img-top cover" alt="...">
                             </a>
                         <div class="card-body">
-                          <h5 class="card-title text-center">Cuento 2</h5>
+                          <h5 class="card-title text-center">Leyenda de cinco hermanos</h5>
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div class="row row-cols-2 row-cols-md-4 g-4">
+                    <div class="col">
+                      <div class="card mb-5 ms-auto me-3">
+                        <a class="card-imagen" href="javascript:video(13)">
+                            <img id="prueba" src="img/ruido.png" class="card-img-top cover" alt="...">
+                        </a>
+                        <div class="card-body">
+                          <h5 class="card-title text-center">El ruido</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card me-auto mb-5 ms-3">
+                        <a class="card-imagen" href="javascript:video(14)">
+                            <img src="img/carrera.png" class="card-img-top cover" alt="...">
+                        </a>
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Carrera en el bosque</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-5 ms-auto me-3">
+                            <a class="card-imagen" href="javascript:video(15)">
+                                <img src="img/dulce.png" class="card-img-top cover" alt="...">
+                            </a>
+                        <div class="card-body">
+                          <h5 class="card-title text-center">El dulce y feliz lunar de magdi</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
             </div>
           </header>  
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -231,8 +269,47 @@
             </div>
         </div>
 
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">VISTA PREVIA DE ETAPAS</h5>
+                </button>
+              </div>
+                  <div class="modal-body">
+                    <div class="col-12">
+                      <div class="input-group d-flex justify-content-around" onclick="seleccionetapamodal();">
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                          <input type="radio" class="btn-check p-0" name="btnradiomodal" value="0" id="btnradio1modal" autocomplete="off"  checked>
+                          <label class="btn btn-outline-yellow modal1card" for="btnradio1modal">Etapa 1</label>
+                        
+                          <input type="radio" class="btn-check" name="btnradiomodal" value="1" id="btnradio2modal" autocomplete="off" >
+                          <label class="btn btn-outline-yellow modal1card" for="btnradio2modal">Etapa 2</label>
+                        
+                          <input type="radio" class="btn-check p-0" name="btnradiomodal" value="2" id="btnradio3modal" autocomplete="off" >
+                          <label class="btn btn-outline-yellow modal1card" for="btnradio3modal">Etapa 3</label>
+    
+                          <input type="radio" class="btn-check" name="btnradiomodal" value="3" id="btnradio4modal" autocomplete="off" >
+                          <label class="btn btn-outline-yellow modal1card" for="btnradio4modal">Etapa 4</label>
+  
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-3" id="imagenmodal1">
+                        
+                    </div>
+                  </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+      </div>
+
+        
+
         <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 20">
-          <div id="liveToast" class="toast" data-delay="1000" role="alert" aria-live="assertive" aria-atomic="true">
+          <div id="liveToast" class="toast" data-delay="1500" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-body text-center">
               SENSIBILIDAD CONFIRMADA
             </div>

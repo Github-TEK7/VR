@@ -3356,6 +3356,57 @@ textarea.form-control-lg {
   background-color: transparent;
 }
 
+.btn-outline-yellow {
+  color: #e4c662;
+  border-color: #64a19d;
+}
+.btn-outline-yellow:hover {
+  color: #000;
+  background-color: #e4c662;
+  border-color: #d8ad21;
+}
+.btn-check:focus + .btn-outline-yellow, .btn-outline-yellow:focus {
+  box-shadow: 0 0 0 0.25rem rgba(100, 161, 157, 0.5);
+}
+.btn-check:checked + .btn-outline-yellow, .btn-check:active + .btn-outline-yellow, .btn-outline-yellow:active, .btn-outline-yellow.active, .btn-outline-yellow.dropdown-toggle.show {
+  color: #000;
+  background-color: #e4c662;
+  border-color: #64a19d;
+}
+.btn-check:checked + .btn-outline-yellow:focus, .btn-check:active + .btn-outline-yellow:focus, .btn-outline-yellow:active:focus, .btn-outline-yellow.active:focus, .btn-outline-yellow.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(100, 0, 157, 0.5);
+}
+.btn-outline-yellow:disabled, .btn-outline-yellow.disabled {
+  color: #64a19d;
+  background-color: transparent;
+}
+
+.btn-outline-yellow2 {
+  color: #000;
+  border-color: #64a19d;
+  background-color: #ebbb20;
+}
+.btn-outline-yellow2:hover {
+  color: #000;
+  background-color: #e4c662;
+  border-color: #d8ad21;
+}
+.btn-check:focus + .btn-outline-yellow2, .btn-outline-yellow2:focus {
+  box-shadow: 0 0 0 0.25rem rgba(235, 220, 10, 0.5);
+}
+.btn-check:checked + .btn-outline-yellow2, .btn-check:active + .btn-outline-yellow2, .btn-outline-yellow2:active, .btn-outline-yellow2.active, .btn-outline-yellow2.dropdown-toggle.show {
+  color: #000;
+  background-color: #e4c662;
+  border-color: #e4c662;
+}
+.btn-check:checked + .btn-outline-yellow2:focus, .btn-check:active + .btn-outline-yellow2:focus, .btn-outline-yellow2:active:focus, .btn-outline-yellow2.active:focus, .btn-outline-yellow2.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(157, 154, 0, 0.5);
+}
+.btn-outline-yellow2:disabled, .btn-outline-yellow2.disabled {
+  color: #e4c662;
+  background-color: yellow;
+}
+
 .btn-outline-secondary {
   color: #7464a1;
   border-color: #7464a1;
@@ -11698,6 +11749,11 @@ body {
   padding: 5rem 0;
 }
 
+.select-ok {
+  background-color: #e4c662;
+  border-top: 15%;
+}
+
 .color1 {
   border: solid 5px red;
 }
@@ -11735,58 +11791,6 @@ body {
   height: 100%;
 }
 
-.btn-outline-yellow {
-  color: #e4c662;
-  border-color: #64a19d;
-}
-.btn-outline-yellow:hover {
-  color: #000;
-  background-color: #e4c662;
-  border-color: #d8ad21;
-}
-.btn-check:focus + .btn-outline-yellow, .btn-outline-yellow:focus {
-  box-shadow: 0 0 0 0.25rem rgba(100, 161, 157, 0.5);
-}
-.btn-check:checked + .btn-outline-yellow, .btn-check:active + .btn-outline-yellow, .btn-outline-yellow:active, .btn-outline-yellow.active, .btn-outline-yellow.dropdown-toggle.show {
-  color: #000;
-  background-color: #e4c662;
-  border-color: #64a19d;
-}
-.btn-check:checked + .btn-outline-yellow:focus, .btn-check:active + .btn-outline-yellow:focus, .btn-outline-yellow:active:focus, .btn-outline-yellow.active:focus, .btn-outline-yellow.dropdown-toggle.show:focus {
-  box-shadow: 0 0 0 0.25rem rgba(100, 0, 157, 0.5);
-}
-.btn-outline-yellow:disabled, .btn-outline-yellow.disabled {
-  color: #64a19d;
-  background-color: transparent;
-}
-
-.btn-outline-yellow2 {
-  color: #000;
-  border-color: #64a19d;
-  background-color: #e4c662;
-}
-.btn-outline-yellow2:hover {
-  color: #000;
-  background-color: #e4c662;
-  border-color: #d8ad21;
-}
-.btn-check:focus + .btn-outline-yellow2, .btn-outline-yellow2:focus {
-  box-shadow: 0 0 0 0.25rem rgba(235, 220, 10, 0.5);
-}
-.btn-check:checked + .btn-outline-yellow2, .btn-check:active + .btn-outline-yellow2, .btn-outline-yellow2:active, .btn-outline-yellow2.active, .btn-outline-yellow2.dropdown-toggle.show {
-  color: #000;
-  background-color: #e4c662;
-  border-color: #e4c662;
-}
-.btn-check:checked + .btn-outline-yellow2:focus, .btn-check:active + .btn-outline-yellow2:focus, .btn-outline-yellow2:active:focus, .btn-outline-yellow2.active:focus, .btn-outline-yellow2.dropdown-toggle.show:focus {
-  box-shadow: 0 0 0 0.25rem rgba(157, 154, 0, 0.5);
-}
-.btn-outline-yellow2:disabled, .btn-outline-yellow2.disabled {
-  color: #e4c662;
-  background-color: yellow;
-}
-
-.select-ok {
-  background-color: #e4c662;
-  border-top: 15%;
+.modal1card {
+  padding: 10px;
 }
