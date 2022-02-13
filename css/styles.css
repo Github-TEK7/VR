@@ -11698,11 +11698,6 @@ body {
   padding: 5rem 0;
 }
 
-.select-ok {
-  background-color: #e4c662;
-  border-top: 15%;
-}
-
 .color1 {
   border: solid 5px red;
 }
@@ -11789,4 +11784,9 @@ body {
 .btn-outline-yellow2:disabled, .btn-outline-yellow2.disabled {
   color: #e4c662;
   background-color: yellow;
+}
+
+.select-ok {
+  background-color: #e4c662;
+  border-top: 15%;
 }
